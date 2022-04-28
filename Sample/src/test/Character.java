@@ -29,4 +29,36 @@ public class Character {
         }
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHp() {
+        return hp;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    public int getOffense() {
+        return offense;
+    }
+
+    public void setOffense(int offense) {
+        this.offense = offense;
+    }
+
+    public int getDeffense() {
+        return deffense;
+    }
+
+    public void setDeffense(int deffense) {
+        this.deffense = deffense;
+    }
+
 }
