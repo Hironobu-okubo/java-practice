@@ -18,5 +18,18 @@ public class Hero extends Character {
         this.weapon = weapon;
     }
 
+    @Override
+    public void attack(Character opponent){
+        int damage = super.getOffense() + this.weapon - super.getDeffense();
+
+        if(damage > 0){
+            opponent.setHp(opponent.getHp() - damage);
+            System.out.println(super.getName() + " は " + opponent.getName() + " に " + damage + " のダメージを与えた！");
+        }else {
+            // ダメージ量が0以下ならミスにする
+            System.out.println("ミス！ " + super.getName() + " は " + opponent.getName() + " にダメージを与えられない！");
+        }
+    }
+
 }
 
