@@ -22,6 +22,19 @@ public class EmployeeSales extends EmployeeBase{
         System.out.println("今日は10件アポイント取りました");
     }
 
+    @Override
+    public void introduce(){
+        super.setVitality(super.getVitality() - 10);
+        System.out.println("私の名前は" + super.getEmployeeName() + "です。");
+        System.out.println("所属部署は" + super.getDivisionName() + "です。");
+        System.out.println("今日のアポイント先は" + appointment + "です。");
+    }
+
+    public void greeting(){
+        super.setVitality(super.getVitality() - 10);
+        System.out.println(super.getDivisionName()+ "の皆さん" + "おはようございます");
+    }
+
     public String getAppointment() {
         return appointment;
     }
