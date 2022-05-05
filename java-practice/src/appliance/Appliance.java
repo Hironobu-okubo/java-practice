@@ -6,6 +6,10 @@ public class Appliance {
     private String brand;
     private int price;
 
+    public Appliance(){
+
+    }
+
     public Appliance(String name, String brand, int price){
         this.name = name;
         this.brand = brand;

@@ -23,4 +23,11 @@ public class Fridge extends Appliance{
         this.capacity = capacity;
     }
 
+    @Override
+    public void getInfo(){
+        super.getInfo();
+        System.out.println("容量は" + capacity + "です。");
+        System.out.println("");
+    }
+
 }
